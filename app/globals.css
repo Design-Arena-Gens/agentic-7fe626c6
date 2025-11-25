@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  background: radial-gradient(circle at top, rgba(244, 237, 226, 0.9), #f8f6f2);
+  min-height: 100%;
+}
+
+body {
+  font-family: theme("fontFamily.sans");
+  color: theme("colors.atlas.blue");
+}
+
+main {
+  min-height: calc(100vh - 140px);
+}
+
+a {
+  @apply text-atlas-teal hover:text-atlas-coral transition-colors duration-200;
+}
